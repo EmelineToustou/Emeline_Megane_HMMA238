@@ -1,5 +1,11 @@
 def calcul_nb_voisins(Z):
-	"""Calcul du nombre de voisins vivants."""
+	"""Calcul du nombre de voisins vivants.
+
+	Entrée: Prend en argument une liste (de liste) qui 
+        représente la "carte" du jeu de la vie.
+        Sortie: Renvoie le nombre de voisins vivants de chaque cellules"""
+
+	
 	forme = len(Z), len(Z[0])
 	N = [[0, ] * (forme[0]) for i in range(forme[1])]
 	for x in range(1, forme[0] - 1):
