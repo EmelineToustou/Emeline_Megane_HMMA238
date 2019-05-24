@@ -39,6 +39,7 @@ def iteration_jeu(Z):
 
 
 
+from numba import jit
 
 @jit(nopython=True)
 def calcul_nb_voisins_jit(Z):
@@ -51,6 +52,7 @@ def calcul_nb_voisins_jit(Z):
 					+ Z[x-1][y] +	 0			+ Z[x+1][y] \
 					+ Z[x-1][y+1] + Z[x][y+1] + Z[x+1][y+1]
 	return N
+
 
 
 
