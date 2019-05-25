@@ -112,6 +112,8 @@ def iteration_jeu_jit(Z):
 
 
 
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -135,3 +137,25 @@ def affichage_jeu(Etat_jeu, Iteration = 0):
 
 	plt.imshow(Z_iter)
 	plt.title("Etape " + str(Iteration) + " du jeu de la vie")
+
+
+
+
+
+def fig_digit(x_init, w_regression, alpha = 0.1):
+	"""
+
+	Entrées : fit_digit prend en arguments le vecteur codant l'image initiale : x_init,
+			le vecteur w contenant les coefficients obtenus par la régression : w_regression,
+			un réel alpha.
+
+	fit_digit affiche l'image de x_init, transformée par l'opération suivante :
+	x_mod = x_init - alpha * ((w_regression^T * x_init) / norme(w_regression)**2) * w_regression.
+
+	"""
+
+	x_mod = x_init.reshape(784, 1) - alpha * (np.dot(w_regression.T, x_init.reshape(784, 1)) * w_regression) / np.linalg.norm(w_regression)**2
+
+	plt.imshow(x_mod.reshape(28, 28))
+	plt.title("Image transformée")
+
