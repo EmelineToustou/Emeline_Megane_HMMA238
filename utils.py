@@ -3,7 +3,7 @@ def calcul_nb_voisins(Z):
 
 	Calcul du nombre de voisins vivants.
 
-	Entrée: Prend en argument une liste (de liste) qui 
+	Entrée: Prend en argument une liste (de listes) qui 
         représente la "carte" du jeu de la vie.
     	Sortie: Renvoie le nombre de voisins vivants de chaque cellule.
 
@@ -61,7 +61,7 @@ def calcul_nb_voisins_jit(Z):
 
 	Calcul du nombre de voisins vivants.
 
-	Entrée: Prend en argument une liste (de liste) qui 
+	Entrée: Prend en argument une liste (de listes) qui 
         représente la "carte" du jeu de la vie.
     	Sortie: Renvoie le nombre de voisins vivants de chaque cellule.
 
