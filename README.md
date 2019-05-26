@@ -1,4 +1,4 @@
-HMMA238 - Développement Logiciel.
+# HMMA238 - Développement Logiciel.
 
 Créé par Mégane BOYER et Emeline Toustou.
 
